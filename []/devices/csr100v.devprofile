@@ -1,0 +1,38 @@
+{
+  "base": {
+    "profile_name": "CSR100V",
+    "description": "MDT",
+    "address": "192.168.42.82",
+    "username": "Nsindiso",
+    "timeout": 30,
+    "variables": {},
+    "certificate": "",
+    "clientcert": "",
+    "clientkey": "",
+    "encrypted_password": "TStbSS6kjVRGkjEIbCt72Q==$gAAAAABgg23erySq2FvDu2lY39qrtgKM0p597V3rdstI5zEVXqubqb-_r_UeKFA5PPRbxNRcy15Q997_Y1GLfu7YDbGeKRRJjA=="
+  },
+  "netconf": {
+    "enabled": true,
+    "device_variant": "csr",
+    "port": 830,
+    "ignore_keys": true,
+    "address": "",
+    "username": "",
+    "timeout": "",
+    "encrypted_password": ""
+  },
+  "ssh": {
+    "enabled": false,
+    "device_variant": "generic_termserver",
+    "address": "",
+    "port": 22,
+    "delay_factor": 1.0,
+    "username": "",
+    "timeout": "",
+    "secure": false,
+    "encrypted_password": ""
+  },
+  "yangsuite": {
+    "user": "nsindiso"
+  }
+}

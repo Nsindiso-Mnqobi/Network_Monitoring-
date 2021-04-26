@@ -1,0 +1,9 @@
+FROM telegraf       
+MAINTAINER  Nsindiso Matshanga (nsinmatsh@gmail.com)
+RUN apt-get update 
+ENV INFLUX_TOKEN=baWJAFq10uOxy0eSyq8R220UboL7fCrNyJ4c4y0ezTJIITtZGaiMIDduSDB3y6xU9Dup2yrpDcDkowbaWcTY3w==
+RUN rm /etc/telegraf/telegraf.conf
+WORKDIR /etc/telegraf/
+ADD telegraf.conf .
+EXPOSE  57000
+CMD ["telegraf"]
