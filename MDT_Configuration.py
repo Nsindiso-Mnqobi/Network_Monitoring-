@@ -6,6 +6,7 @@ import csv
 import xmltodict 
 import requests
 import json
+from time import ctime 
 
 class  configure_mdt:
     host = ""
@@ -51,8 +52,11 @@ class  configure_mdt:
             
             subscription_config = device.get(netconf_filter)
             subscription = xmltodict.parse(subscription_config.xml)["rpc-reply"]["data"]["mdt-oper-data"]
+            T = ctime()
             print("*" * 25 + self.host + "*" * 50)
-            Power = "Subscription ID:  " + subscription["mdt-subscriptions"]["subscription-id"] + "\n" + "Source Address:   " + subscription["mdt-subscriptions"]["base"]["source-address"] + "\n" +"Stream:   " +  subscription["mdt-subscriptions"]["base"]["stream"] + "\n" + "Xpath:   " + subscription["mdt-subscriptions"]["base"]["xpath"]  + "\n" + "State:   "  +  subscription["mdt-subscriptions"]["state"]  + "\n" +  "Comments:  "+ subscription["mdt-subscriptions"]["state"] + "\n" + "Receiver Address:   " + subscription["mdt-subscriptions"]["mdt-receivers"]["address"]  + "\n" + "Port:   " + subscription["mdt-subscriptions"]["mdt-receivers"]["port"]  + "\n" + "Connection State   :" + subscription["mdt-connections"]["state"] 
+            Power = "Subscription ID:  " + subscription["mdt-subscriptions"]["subscription-id"] + "\n" + "Source Address:   " + subscription["mdt-subscriptions"]["base"]["source-address"] + "\n" +"Stream:   " +  subscription["mdt-subscriptions"]["base"]["stream"] + "\n" + "Xpath:   " + subscription["mdt-subscriptions"]["base"]["xpath"]  + "\n" + "State:   "  +  subscription["mdt-subscriptions"]["state"]  + "\n" +  "Comments:  "+ subscription["mdt-subscriptions"]["state"] + "\n" + "Receiver Address:   " + subscription["mdt-subscriptions"]["mdt-receivers"]["address"]  + "\n" + "Port:   " + subscription["mdt-subscriptions"]["mdt-receivers"]["port"]  + "\n" + "Connection State   :" + subscription["mdt-connections"]["state"]  + "\n" + "Time of Configuration   :"  +  T
+            print(Power)
+            print("*" * 25 + self.host + "*" * 58)           
             return Power   
 
 
