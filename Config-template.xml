@@ -1,26 +1,19 @@
-<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="101">
-    <edit-config>
-      <target>
-        <running/>
-      </target>
-      <config>
-        <subscription-config xmlns="urn:ietf:params:xml:ns:yang:ietf-event-notifications">
-          <subscription>
-            <subscription-id>{subscription_id}</subscription-id>
-            <stream xmlns:yp="urn:ietf:params:xml:ns:yang:ietf-yang-push">yp:yang-push</stream>
-            <encoding xmlns:cyp="urn:cisco:params:xml:ns:yang:cisco-xe-ietf-yang-push-ext">cyp:encode-kvgpb</encoding>
-            <xpath-filter xmlns="urn:ietf:params:xml:ns:yang:ietf-yang-push" xmlns:yang="urn:ietf:params:xml:ns:yang:ietf-yang-types">{xpath}</xpath-filter>
-            <receivers>
-              <receiver>
-                <address>{receiver_ip_address}</address>
-                <port>57000</port>
-                <protocol xmlns:cyp="urn:cisco:params:xml:ns:yang:cisco-xe-ietf-yang-push-ext">cyp:grpc-tcp</protocol>
-              </receiver>
-            </receivers>
-            <source-address>{source_ip_address}</source-address>
-            <period xmlns="urn:ietf:params:xml:ns:yang:ietf-yang-push">{period}</period>
-          </subscription>
-        </subscription-config>
-      </config>
-    </edit-config>
-  </rpc>
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <mdt-config-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mdt-cfg">
+      <mdt-subscription>
+        <subscription-id>{subscription_id}</subscription-id>
+        <base>
+          <stream>yang-push</stream>
+          <encoding>encode-kvgpb</encoding>
+          <period>{period}</period>
+          <source-address>{source_ip_address}</source-address>
+          <xpath>{xpath}</xpath>
+        </base>
+        <mdt-receivers>
+          <address>{receiver_ip_address}</address>
+          <port>57000</port>
+          <protocol>grpc-tcp</protocol>
+        </mdt-receivers>
+      </mdt-subscription>
+    </mdt-config-data>
+  </config>

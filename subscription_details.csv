@@ -1,0 +1,3 @@
+103,/acl-ios-xe-oper:access-lists/access-list/access-list-entries/access-list-entry,192.168.42.128,192.168.42.82,500
+104,/mpls-ldp-ios-xe-oper:mpls-ldp-state,192.168.42.128,192.168.42.82,500
+105,/platform-sw-ios-xe-oper:cisco-platform-software/control-processes/control-process/memory-stats,192.168.42.128,192.168.42.82,500

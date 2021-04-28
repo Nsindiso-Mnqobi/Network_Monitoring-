@@ -1,868 +1,228 @@
-[2021-04-26 16:31:16.888 DEBUG                    django.template : 878]
-Exception while resolving variable 'minLength' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'minLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'minLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'minLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [minLength] in {'label': 'Delay Factor', 'type': 'float', 'description': 'Multiplier for acceptable delays from the device. Set to lower value for faster performance. Set to higher value if timeout errors are seen.', 'min': 0, 'default': 1.0, 'step': 0.1}
-[2021-04-26 16:31:16.893 DEBUG                    django.template : 878]
-Exception while resolving variable 'max' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [max] in {'label': 'Delay Factor', 'type': 'float', 'description': 'Multiplier for acceptable delays from the device. Set to lower value for faster performance. Set to higher value if timeout errors are seen.', 'min': 0, 'default': 1.0, 'step': 0.1}
-[2021-04-26 16:31:16.894 DEBUG                    django.template : 878]
-Exception while resolving variable 'maxLength' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [maxLength] in {'label': 'Delay Factor', 'type': 'float', 'description': 'Multiplier for acceptable delays from the device. Set to lower value for faster performance. Set to higher value if timeout errors are seen.', 'min': 0, 'default': 1.0, 'step': 0.1}
-[2021-04-26 16:31:16.895 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'label': 'Delay Factor', 'type': 'float', 'description': 'Multiplier for acceptable delays from the device. Set to lower value for faster performance. Set to higher value if timeout errors are seen.', 'min': 0, 'default': 1.0, 'step': 0.1}
-[2021-04-26 16:31:16.897 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'label': 'Delay Factor', 'type': 'float', 'description': 'Multiplier for acceptable delays from the device. Set to lower value for faster performance. Set to higher value if timeout errors are seen.', 'min': 0, 'default': 1.0, 'step': 0.1}
-[2021-04-26 16:31:16.898 DEBUG                    django.template : 878]
-Exception while resolving variable 'min' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'min'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'min'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'min'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [min] in {'type': 'string', 'description': 'Username to access the device via SSH', 'minLength': 1, 'default': ''}
-[2021-04-26 16:31:16.899 DEBUG                    django.template : 878]
-Exception while resolving variable 'max' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [max] in {'type': 'string', 'description': 'Username to access the device via SSH', 'minLength': 1, 'default': ''}
-[2021-04-26 16:31:16.900 DEBUG                    django.template : 878]
-Exception while resolving variable 'maxLength' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [maxLength] in {'type': 'string', 'description': 'Username to access the device via SSH', 'minLength': 1, 'default': ''}
-[2021-04-26 16:31:16.901 DEBUG                    django.template : 878]
-Exception while resolving variable 'step' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'step'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'step'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'step'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [step] in {'type': 'string', 'description': 'Username to access the device via SSH', 'minLength': 1, 'default': ''}
-[2021-04-26 16:31:16.902 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'type': 'string', 'description': 'Username to access the device via SSH', 'minLength': 1, 'default': ''}
-[2021-04-26 16:31:16.904 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'type': 'string', 'description': 'Username to access the device via SSH', 'minLength': 1, 'default': ''}
-[2021-04-26 16:31:16.905 DEBUG                    django.template : 878]
-Exception while resolving variable 'label' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'label'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'label'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'label'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [label] in {'type': 'string', 'description': 'Username to access the device via SSH', 'minLength': 1, 'default': ''}
-[2021-04-26 16:31:16.907 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'type': 'string', 'description': 'Username to access the device via SSH', 'minLength': 1, 'default': ''}
-[2021-04-26 16:31:16.908 DEBUG                    django.template : 878]
-Exception while resolving variable 'min' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'min'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'min'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'min'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [min] in {'type': 'password', 'description': 'Password to access the device via SSH', 'minLength': 1}
-[2021-04-26 16:31:16.910 DEBUG                    django.template : 878]
-Exception while resolving variable 'max' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [max] in {'type': 'password', 'description': 'Password to access the device via SSH', 'minLength': 1}
-[2021-04-26 16:31:16.911 DEBUG                    django.template : 878]
-Exception while resolving variable 'maxLength' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [maxLength] in {'type': 'password', 'description': 'Password to access the device via SSH', 'minLength': 1}
-[2021-04-26 16:31:16.911 DEBUG                    django.template : 878]
-Exception while resolving variable 'step' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'step'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'step'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'step'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [step] in {'type': 'password', 'description': 'Password to access the device via SSH', 'minLength': 1}
-[2021-04-26 16:31:16.912 DEBUG                    django.template : 878]
-Exception while resolving variable 'default' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'default'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'default'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'default'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [default] in {'type': 'password', 'description': 'Password to access the device via SSH', 'minLength': 1}
-[2021-04-26 16:31:16.913 DEBUG                    django.template : 878]
-Exception while resolving variable 'default' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'default'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'default'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'default'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [default] in {'type': 'password', 'description': 'Password to access the device via SSH', 'minLength': 1}
-[2021-04-26 16:31:16.914 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'type': 'password', 'description': 'Password to access the device via SSH', 'minLength': 1}
-[2021-04-26 16:31:16.915 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'type': 'password', 'description': 'Password to access the device via SSH', 'minLength': 1}
-[2021-04-26 16:31:16.916 DEBUG                    django.template : 878]
-Exception while resolving variable 'label' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'label'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'label'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'label'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [label] in {'type': 'password', 'description': 'Password to access the device via SSH', 'minLength': 1}
-[2021-04-26 16:31:16.917 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'type': 'password', 'description': 'Password to access the device via SSH', 'minLength': 1}
-[2021-04-26 16:31:16.919 DEBUG                    django.template : 878]
-Exception while resolving variable 'minLength' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'minLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'minLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'minLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [minLength] in {'type': 'int', 'description': 'Timeout, in seconds, for SSH requests', 'min': 0, 'default': ''}
-[2021-04-26 16:31:16.921 DEBUG                    django.template : 878]
-Exception while resolving variable 'max' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'max'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [max] in {'type': 'int', 'description': 'Timeout, in seconds, for SSH requests', 'min': 0, 'default': ''}
-[2021-04-26 16:31:16.922 DEBUG                    django.template : 878]
-Exception while resolving variable 'maxLength' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'maxLength'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [maxLength] in {'type': 'int', 'description': 'Timeout, in seconds, for SSH requests', 'min': 0, 'default': ''}
-[2021-04-26 16:31:16.923 DEBUG                    django.template : 878]
-Exception while resolving variable 'step' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'step'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'step'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'step'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [step] in {'type': 'int', 'description': 'Timeout, in seconds, for SSH requests', 'min': 0, 'default': ''}
-[2021-04-26 16:31:16.923 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'type': 'int', 'description': 'Timeout, in seconds, for SSH requests', 'min': 0, 'default': ''}
-[2021-04-26 16:31:16.924 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'type': 'int', 'description': 'Timeout, in seconds, for SSH requests', 'min': 0, 'default': ''}
-[2021-04-26 16:31:16.926 DEBUG                    django.template : 878]
-Exception while resolving variable 'label' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'label'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'label'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'label'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [label] in {'type': 'int', 'description': 'Timeout, in seconds, for SSH requests', 'min': 0, 'default': ''}
-[2021-04-26 16:31:16.927 DEBUG                    django.template : 878]
-Exception while resolving variable 'required' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'required'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [required] in {'type': 'int', 'description': 'Timeout, in seconds, for SSH requests', 'min': 0, 'default': ''}
-[2021-04-26 16:31:16.928 DEBUG                    django.template : 878]
-Exception while resolving variable 'description' in template 'ysdevices/device_form.html'.
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
-    current = current[bit]
-KeyError: 'description'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'dict' object has no attribute 'description'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 849, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'description'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nsindiso/.local/lib/python3.6/site-packages/django/template/base.py", line 856, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [description] in {'label': 'Use SSL Certificate', 'type': 'boolean', 'default': False}
-[2021-04-26 16:31:16.932 INFO                       django.server : 124]
-"GET /devices/edit/csr100v HTTP/1.1" 200 41568
-[2021-04-26 16:31:17.301 INFO                       django.server : 124]
+[2021-04-28 14:20:56.336 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:20:56.342 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:20:56.343 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:20:56.343 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:period
+[2021-04-28 14:20:56.343 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:period
+[2021-04-28 14:20:56.344 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: 
+[2021-04-28 14:20:56.344 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-config-data/mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:20:56.344 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:20:56.348 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:20:56.349 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:20:56.350 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:20:56.350 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:period
+[2021-04-28 14:20:56.351 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:period
+[2021-04-28 14:20:56.351 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: 
+[2021-04-28 14:20:56.357 DEBUG     yangsuite.ysnetconf.rpcbuilder : 262]
+get_payload: constructed XML:
+<filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mdt-config-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mdt-cfg">
+    <mdt-subscription>
+      <base>
+        <period/>
+      </base>
+    </mdt-subscription>
+  </mdt-config-data>
+</filter>
+
+[2021-04-28 14:20:56.359 INFO                       django.server : 124]
+"POST /netconf/getrpc/ HTTP/1.1" 200 430
+[2021-04-28 14:21:04.261 INFO                       django.server : 124]
+"GET /static/yangsuite/css/excite-bike/images/ui-icons_0a82eb_256x240.png HTTP/1.1" 304 0
+[2021-04-28 14:21:04.262 INFO                       django.server : 124]
+"GET /static/yangsuite/css/excite-bike/images/ui-icons_fcdd4a_256x240.png HTTP/1.1" 304 0
+[2021-04-28 14:21:04.291 INFO                       django.server : 124]
+"GET /static/yangsuite/css/excite-bike/images/ui-icons_ffffff_256x240.png HTTP/1.1" 304 0
+[2021-04-28 14:21:04.303 DEBUG          yangsuite.ysnetconf.nconf :1234]
+Constructing raw RPC for edit-config
+[2021-04-28 14:21:04.306 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-config-data/mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:04.307 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:04.308 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:04.309 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:04.309 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:04.310 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:period
+[2021-04-28 14:21:04.311 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:period
+[2021-04-28 14:21:04.311 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: 
+[2021-04-28 14:21:04.312 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-config-data/mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:04.312 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:04.314 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:04.316 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:04.317 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:04.318 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:period
+[2021-04-28 14:21:04.318 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:period
+[2021-04-28 14:21:04.319 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: 
+[2021-04-28 14:21:04.320 DEBUG     yangsuite.ysnetconf.rpcbuilder : 262]
+get_payload: constructed XML:
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mdt-config-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mdt-cfg">
+    <mdt-subscription>
+      <base>
+        <period/>
+      </base>
+    </mdt-subscription>
+  </mdt-config-data>
+</config>
+
+[2021-04-28 14:21:04.322 INFO                       django.server : 124]
+"POST /netconf/getrpc/ HTTP/1.1" 200 432
+[2021-04-28 14:21:38.949 DEBUG          yangsuite.ysnetconf.nconf :1234]
+Constructing raw RPC for edit-config
+[2021-04-28 14:21:38.950 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-config-data/mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:38.951 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:38.952 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:38.953 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:38.954 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:38.956 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:period
+[2021-04-28 14:21:38.958 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:period
+[2021-04-28 14:21:38.959 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: 
+[2021-04-28 14:21:38.961 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-config-data/mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:38.962 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:38.964 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:mdt-subscription/mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:38.965 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:38.968 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:base/mdt-cfg:period
+[2021-04-28 14:21:38.969 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-cfg:period
+[2021-04-28 14:21:38.970 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-cfg:period
+[2021-04-28 14:21:38.970 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: 
+[2021-04-28 14:21:38.980 DEBUG     yangsuite.ysnetconf.rpcbuilder : 262]
+get_payload: constructed XML:
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mdt-config-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mdt-cfg">
+    <mdt-subscription>
+      <base>
+        <period>34</period>
+      </base>
+    </mdt-subscription>
+  </mdt-config-data>
+</config>
+
+[2021-04-28 14:21:38.982 INFO                       django.server : 124]
+"POST /netconf/getrpc/ HTTP/1.1" 200 442
+[2021-04-28 14:27:24.813 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-04-28 14:27:24.816 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-04-28 14:27:24.916 INFO    yangsuite.ysfilemanager.filemanager.yangset : 280]
+Loaded YANG set 'CSR100v' owned by 'nsindiso' (543 modules) from /home/nsindiso/Documents/Model_Driven_Telemetry_Lab/[]/users/nsindiso/yangsets/csr100v
+[2021-04-28 14:27:24.919 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-04-28 14:27:24.923 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-04-28 14:27:25.075 INFO    yangsuite.ysfilemanager.filemanager.yangset : 280]
+Loaded YANG set 'CSR100v' owned by 'nsindiso' (543 modules) from /home/nsindiso/Documents/Model_Driven_Telemetry_Lab/[]/users/nsindiso/yangsets/csr100v
+[2021-04-28 14:27:25.079 DEBUG       yangsuite.ysyangtree.context : 159]
+Cached ctx has same yangset
+[2021-04-28 14:27:25.088 INFO        yangsuite.ysyangtree.ymodels :  88]
+Replacing cached instance YSYangModels (YANG models ('Cisco-IOS-XE-mdt-cfg',), context YSContext (repository YANG set 'CSR100v' owned by 'nsindiso' (543 modules)) with 6 modules loaded) with YSYangModels (YANG models ('Cisco-IOS-XE-mdt-oper',), context YSContext (repository YANG set 'CSR100v' owned by 'nsindiso' (543 modules)) with 6 modules loaded) under key "nsindiso"
+[2021-04-28 14:27:25.094 INFO                       django.server : 124]
+"POST /yangtree/gettree/ HTTP/1.1" 200 41309
+[2021-04-28 14:27:58.096 DEBUG          yangsuite.ysnetconf.nconf :1234]
+Constructing raw RPC for get
+[2021-04-28 14:27:58.099 INFO                       django.server : 124]
+"POST /netconf/getrpc/ HTTP/1.1" 200 107
+[2021-04-28 14:28:06.967 INFO                       django.server : 124]
 "GET /static/yangsuite/fonts/CiscoSans/CiscoSansTTRegularOblique.woff2 HTTP/1.1" 304 0
+[2021-04-28 14:28:14.501 DEBUG          yangsuite.ysnetconf.nconf :1234]
+Constructing raw RPC for get
+[2021-04-28 14:28:14.502 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-oper:mdt-oper-data/mdt-oper:mdt-subscriptions/mdt-oper:base/mdt-oper:period
+[2021-04-28 14:28:14.503 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-oper:mdt-subscriptions/mdt-oper:base/mdt-oper:period
+[2021-04-28 14:28:14.503 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-oper:mdt-subscriptions/mdt-oper:base/mdt-oper:period
+[2021-04-28 14:28:14.504 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-oper:base/mdt-oper:period
+[2021-04-28 14:28:14.504 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-oper:base/mdt-oper:period
+[2021-04-28 14:28:14.505 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-oper:period
+[2021-04-28 14:28:14.505 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-oper:period
+[2021-04-28 14:28:14.506 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: 
+[2021-04-28 14:28:14.506 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-oper:mdt-oper-data/mdt-oper:mdt-subscriptions/mdt-oper:base/mdt-oper:period
+[2021-04-28 14:28:14.507 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-oper:mdt-subscriptions/mdt-oper:base/mdt-oper:period
+[2021-04-28 14:28:14.508 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-oper:mdt-subscriptions/mdt-oper:base/mdt-oper:period
+[2021-04-28 14:28:14.508 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-oper:base/mdt-oper:period
+[2021-04-28 14:28:14.509 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-oper:base/mdt-oper:period
+[2021-04-28 14:28:14.510 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: /mdt-oper:period
+[2021-04-28 14:28:14.512 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /mdt-oper:period
+[2021-04-28 14:28:14.513 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: 
+[2021-04-28 14:28:14.514 DEBUG     yangsuite.ysnetconf.rpcbuilder : 262]
+get_payload: constructed XML:
+<filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mdt-oper-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mdt-oper">
+    <mdt-subscriptions>
+      <base>
+        <period>11</period>
+      </base>
+    </mdt-subscriptions>
+  </mdt-oper-data>
+</filter>
+
+[2021-04-28 14:28:14.517 INFO                       django.server : 124]
+"POST /netconf/getrpc/ HTTP/1.1" 200 378
+[2021-04-28 15:24:47.075 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-04-28 15:24:47.106 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-04-28 15:24:47.400 INFO    yangsuite.ysfilemanager.filemanager.yangset : 280]
+Loaded YANG set 'CSR100v' owned by 'nsindiso' (543 modules) from /home/nsindiso/Documents/Model_Driven_Telemetry_Lab/[]/users/nsindiso/yangsets/csr100v
+[2021-04-28 15:24:47.413 INFO                       django.server : 124]
+"POST /yangtree/gettree/ HTTP/1.1" 200 41309
+[2021-04-28 15:25:48.094 DEBUG          yangsuite.ysnetconf.nconf :1234]
+Constructing raw RPC for get
+[2021-04-28 15:25:48.102 INFO                       django.server : 124]
+"POST /netconf/getrpc/ HTTP/1.1" 200 107

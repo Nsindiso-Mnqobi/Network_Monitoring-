@@ -1,0 +1,11 @@
+<filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" >
+    <mdt-oper-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mdt-oper">
+      <mdt-subscriptions>
+        <subscription-id>{sub_id}</subscription-id>
+      </mdt-subscriptions>
+      <mdt-connections>
+        <source-address>{source_address}</source-address>
+        <state/>
+      </mdt-connections>
+     </mdt-oper-data>
+</filter>
