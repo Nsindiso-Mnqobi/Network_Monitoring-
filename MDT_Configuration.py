@@ -39,7 +39,7 @@ class  configure_mdt:
                                                                                 period = self.period)
 
             device_reply = device.edit_config(config = netconf_config, target = "running")
-            print(device_reply)
+
 
     def get_config(self):
 
@@ -89,12 +89,11 @@ if  __name__ == "__main__":
         host_list = csv.reader(host_details)
         for x in host_list:
             host =x[0]
-            print(host)
             for row in sub_list:
                 sub=row[0]
                 xpath=row[1]
-                r_ip = row[2]
-                s_ip = row[3]
+                r_ip = row[2] 
+                s_ip = row[3] = host
                 period = row[4]
                 Config = configure_mdt(host,sub, xpath,r_ip, s_ip, period)
                 Config.configure_device()            
