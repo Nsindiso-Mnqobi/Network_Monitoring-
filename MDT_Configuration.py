@@ -30,23 +30,24 @@ class  configure_mdt:
         with manager.connect(host = self.host, port = router['port'], 
                                             username=router['username'], password= router['password'], 
                                             hostkey_verify=False) as device:
+            
+            with device.locked("running"):
+                config_template = open('Config-template.xml').read()
+                netconf_config = config_template.format(subscription_id=self.subscription_id,
+                                                                                    xpath = self.xpath,
+                                                                                    receiver_ip_address = self.r_ip_address ,
+                                                                                    source_ip_address = self.s_ip_address,
+                                                                                    period = self.period)
 
-            config_template = open('Config-template.xml').read()
-            netconf_config = config_template.format(subscription_id=self.subscription_id,
-                                                                                xpath = self.xpath,
-                                                                                receiver_ip_address = self.r_ip_address ,
-                                                                                source_ip_address = self.s_ip_address,
-                                                                                period = self.period)
+                device_reply = device.edit_config(config = netconf_config, target = "running")
 
-            device_reply = device.edit_config(config = netconf_config, target = "running")
-
-
+                
     def get_config(self):
 
         with manager.connect(host = self.host, port = router['port'], 
                                             username=router['username'], password= router['password'], 
                                             hostkey_verify=False) as device:
-
+            
             get_config = open("get_config.xml").read()
             netconf_filter = get_config.format(sub_id = self.subscription_id,
                                                                     source_address = self.s_ip_address)
@@ -60,9 +61,18 @@ class  configure_mdt:
             print("*" * 25 + self.host + "*" * 58)           
             return Power   
 
+    def save_config(self):
+
+        with manager.connect(host = self.host, port = router['port'], 
+                                            username=router['username'], password= router['password'], 
+                                            hostkey_verify=False) as device:
+
+            save_rpc = open("save_config.xml").read()
+            wr = device.dispatch(save_rpc)  
+            print(wr)                                        
 
     def send_message(self, message):
-        token = 'NmZmYjhlOTYtNDY5Yy00YzU3LWI2MWUtMjgyNmM1ZGZhZjY3ZTZjYmNmMWUtMzRl_PF84_consumer'
+        token = 'YTRkNjEzZmUtMzE5MC00MDY4LTgzMzgtYzY0MTYwZmNkYmMwZDkzODk5MmYtY2Rj_PF84_consumer'
 
         headers = {
          'Authorization' : 'Bearer {token}'.format(token=token),
@@ -98,6 +108,7 @@ if  __name__ == "__main__":
                 Config = configure_mdt(host,sub, xpath,r_ip, s_ip, period)
                 Config.configure_device()            
                 Config.send_message(Config.get_config())
+            Config.save_config()
 
 
 
