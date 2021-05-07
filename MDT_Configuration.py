@@ -71,7 +71,7 @@ class  configure_mdt:
             """
             save_rpc = device.dispatch(xml_.to_ele(save_body)) 
             save_reply = xmltodict.parse(save_rpc.xml) 
-            reply = save_reply["rpc-reply"]["result"]["#text"]
+            reply = self.host +" : "+ save_reply["rpc-reply"]["result"]["#text"]
             return reply
 
     def send_message(self, message):
