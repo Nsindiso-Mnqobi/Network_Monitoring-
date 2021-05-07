@@ -1114,3 +1114,121 @@ Replacing cached instance YSYangModels (YANG models ('cisco-ia', 'cisco-self-mgm
 "POST /yangtree/gettree/ HTTP/1.1" 200 63442
 [2021-05-07 00:34:28.331 INFO                       django.server : 124]
 "POST /yangtree/getrfc/ HTTP/1.1" 200 7834
+[2021-05-07 01:02:19.595 DEBUG     yangsuite.ysdevices.devprofile : 181]
+Device profile list (filter: netconf): [{'name': 'CSR100V', 'key': 'csr100v', 'description': 'MDT'}]
+[2021-05-07 01:02:19.616 INFO                       django.server : 124]
+"GET /netconf/getyang/ HTTP/1.1" 200 46152
+[2021-05-07 01:02:19.725 INFO                       django.server : 124]
+"GET /static/yangsuite/js/jquery-1.11.2.min.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.740 INFO                       django.server : 124]
+"GET /static/yangsuite/js/jstree/jstreegrid.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.751 INFO                       django.server : 124]
+"GET /static/yangsuite/js/jquery-ui.min.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.752 INFO                       django.server : 124]
+"GET /static/yangsuite/js/yangsuite.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.763 INFO                       django.server : 124]
+"GET /static/yangsuite/js/jstree/themes/default/style.min.css HTTP/1.1" 304 0
+[2021-05-07 01:02:19.764 INFO                       django.server : 124]
+"GET /static/yangsuite/js/js.cookie.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.767 INFO                       django.server : 124]
+"GET /static/yangsuite/js/jstree/jstree.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.779 INFO                       django.server : 124]
+"GET /static/yangsuite/css/excite-bike/jquery-ui.min.css HTTP/1.1" 304 0
+[2021-05-07 01:02:19.779 INFO                       django.server : 124]
+"GET /static/yangsuite/js/formatXML.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.789 INFO                       django.server : 124]
+"GET /static/yangsuite/css/yangsuite-cui.css HTTP/1.1" 304 0
+[2021-05-07 01:02:19.799 INFO                       django.server : 124]
+"GET /static/ysyangtree/css/yangtree.css HTTP/1.1" 304 0
+[2021-05-07 01:02:19.808 INFO                       django.server : 124]
+"GET /static/ysnetconf/css/netconf.css HTTP/1.1" 304 0
+[2021-05-07 01:02:19.820 INFO                       django.server : 124]
+"GET /static/ysdevices/css/device.css HTTP/1.1" 304 0
+[2021-05-07 01:02:19.821 INFO                       django.server : 124]
+"GET /static/ysyangtree/css/chosen-cui.css HTTP/1.1" 304 0
+[2021-05-07 01:02:19.822 INFO                       django.server : 124]
+"GET /static/yangsuite/css/cui-standard-1.3.3.min.css HTTP/1.1" 304 0
+[2021-05-07 01:02:19.850 INFO                       django.server : 124]
+"GET /static/ysnetconf/js/netconf.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.855 INFO                       django.server : 124]
+"GET /static/ysyangtree/js/chosen/chosen.jquery.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.865 INFO                       django.server : 124]
+"GET /static/ysnetconf/js/rpcmanager.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.866 INFO                       django.server : 124]
+"GET /static/ysyangtree/css/chosen/chosen.css HTTP/1.1" 304 0
+[2021-05-07 01:02:19.874 INFO                       django.server : 124]
+"GET /static/ysfilemanager/js/yangsets.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.906 INFO                       django.server : 124]
+"GET /static/ysyangtree/js/jstreegrid.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.907 INFO                       django.server : 124]
+"GET /static/ysdevices/js/devices.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.919 INFO                       django.server : 124]
+"GET /static/ysyangtree/js/tasks.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.921 INFO                       django.server : 124]
+"GET /static/ysyangtree/js/yangtree.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.944 INFO                       django.server : 124]
+"GET /static/yangsuite/js/fontawesome-all.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.952 INFO                       django.server : 124]
+"GET /static/ysyangtree/js/rpc_ui.js HTTP/1.1" 304 0
+[2021-05-07 01:02:19.969 INFO                       django.server : 124]
+"GET /static/yangsuite/favicon/yangsuite.png HTTP/1.1" 304 0
+[2021-05-07 01:02:19.979 INFO                       django.server : 124]
+"POST /gtm HTTP/1.1" 200 20
+[2021-05-07 01:02:20.157 INFO                       django.server : 124]
+"GET /yangsuite/plugins/mode HTTP/1.1" 200 15
+[2021-05-07 01:02:20.346 INFO                       django.server : 124]
+"GET /filemanager/yangsets/list/?readonly=true HTTP/1.1" 200 77
+[2021-05-07 01:02:20.382 INFO                       django.server : 124]
+"POST /yangtree/gettask/ HTTP/1.1" 200 2
+[2021-05-07 01:02:20.706 INFO                       django.server : 124]
+"POST /yangtree/gettasklist/ HTTP/1.1" 200 13
+[2021-05-07 01:02:20.790 INFO                       django.server : 124]
+"GET /static/yangsuite/favicon/manifest.json HTTP/1.1" 304 0
+[2021-05-07 01:02:24.250 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-05-07 01:02:24.259 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-05-07 01:02:24.376 INFO    yangsuite.ysfilemanager.filemanager.yangset : 280]
+Loaded YANG set 'CSR100v' owned by 'nsindiso' (543 modules) from /home/nsindiso/Documents/Model_Driven_Telemetry_Lab/[]/users/nsindiso/yangsets/csr100v
+[2021-05-07 01:02:24.386 INFO                       django.server : 124]
+"GET /filemanager/yangsets/get/?yangset=nsindiso%2Bcsr100v HTTP/1.1" 200 33088
+[2021-05-07 01:02:28.115 INFO                       django.server : 124]
+"GET /static/ysyangtree/css/chosen/chosen-sprite.png HTTP/1.1" 304 0
+[2021-05-07 01:02:29.421 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-05-07 01:02:29.424 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-05-07 01:02:29.518 INFO    yangsuite.ysfilemanager.filemanager.yangset : 280]
+Loaded YANG set 'CSR100v' owned by 'nsindiso' (543 modules) from /home/nsindiso/Documents/Model_Driven_Telemetry_Lab/[]/users/nsindiso/yangsets/csr100v
+[2021-05-07 01:02:29.519 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-05-07 01:02:29.520 DEBUG   yangsuite.ysfilemanager.filemanager.utility :  76]
+Split userset "nsindiso+csr100v" to user "nsindiso", setname/reponame "csr100v"
+[2021-05-07 01:02:29.590 INFO    yangsuite.ysfilemanager.filemanager.yangset : 280]
+Loaded YANG set 'CSR100v' owned by 'nsindiso' (543 modules) from /home/nsindiso/Documents/Model_Driven_Telemetry_Lab/[]/users/nsindiso/yangsets/csr100v
+[2021-05-07 01:02:29.595 DEBUG       yangsuite.ysyangtree.context : 159]
+Cached ctx has same yangset
+[2021-05-07 01:02:29.596 DEBUG       yangsuite.ysyangtree.ymodels : 154]
+Added 1 extra modules {'cisco-self-mgmt'} to base modules ['cisco-ia'] as augmentation targets and/or supermodules
+[2021-05-07 01:02:29.607 INFO        yangsuite.ysyangtree.ymodels :  88]
+Replacing cached instance YSYangModels (YANG models ('cisco-ia', 'cisco-self-mgmt'), context YSContext (repository YANG set 'CSR100v' owned by 'nsindiso' (543 modules)) with 7 modules loaded) with YSYangModels (YANG models ('cisco-ia', 'cisco-self-mgmt'), context YSContext (repository YANG set 'CSR100v' owned by 'nsindiso' (543 modules)) with 7 modules loaded) under key "nsindiso"
+[2021-05-07 01:02:29.611 INFO                       django.server : 124]
+"POST /yangtree/gettree/ HTTP/1.1" 200 63442
+[2021-05-07 01:02:45.098 DEBUG          yangsuite.ysnetconf.nconf :1234]
+Constructing raw RPC for rpc
+[2021-05-07 01:02:45.100 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /cisco-ia:save-config
+[2021-05-07 01:02:45.101 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: 
+[2021-05-07 01:02:45.102 DEBUG     yangsuite.ysnetconf.rpcbuilder : 378]
+Parsing remnant of xpath: /cisco-ia:save-config
+[2021-05-07 01:02:45.102 DEBUG     yangsuite.ysnetconf.rpcbuilder : 402]
+  ...minus pfx/localname: 
+[2021-05-07 01:02:45.104 DEBUG     yangsuite.ysnetconf.rpcbuilder : 262]
+get_payload: constructed XML:
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="101">
+  <save-config xmlns="http://cisco.com/yang/cisco-ia"/>
+</rpc>
+
+[2021-05-07 01:02:45.106 INFO                       django.server : 124]
+"POST /netconf/getrpc/ HTTP/1.1" 200 156

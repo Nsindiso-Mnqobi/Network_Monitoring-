@@ -1,4 +1,5 @@
 from ncclient import manager
+from ncclient import xml_
 from ncclient.operations import subscribe
 from ncclient.transport.errors import SSHUnknownHostError
 from CSR1000v import router
@@ -56,20 +57,22 @@ class  configure_mdt:
             subscription = xmltodict.parse(subscription_config.xml)["rpc-reply"]["data"]["mdt-oper-data"]
             T = ctime()
             print("*" * 25 + self.host + "*" * 50)
-            Power = "Subscription ID:  " + subscription["mdt-subscriptions"]["subscription-id"] + "\n" + "Source Address:   " + subscription["mdt-subscriptions"]["base"]["source-address"] + "\n" +"Stream:   " +  subscription["mdt-subscriptions"]["base"]["stream"] + "\n" + "Xpath:   " + subscription["mdt-subscriptions"]["base"]["xpath"]  + "\n" + "State:   "  +  subscription["mdt-subscriptions"]["state"]  + "\n" +  "Comments:  "+ subscription["mdt-subscriptions"]["state"] + "\n" + "Receiver Address:   " + subscription["mdt-subscriptions"]["mdt-receivers"]["address"]  + "\n" + "Port:   " + subscription["mdt-subscriptions"]["mdt-receivers"]["port"]  + "\n" + "Connection State   :" + subscription["mdt-connections"]["state"]  + "\n" + "Time of Configuration   :"  +  T
-            print(Power)
-            print("*" * 25 + self.host + "*" * 58)           
+            Power = "Subscription ID:  " + subscription["mdt-subscriptions"]["subscription-id"] + "\n" + "Source Address:   " + subscription["mdt-subscriptions"]["base"]["source-address"] + "\n" +"Stream:   " +  subscription["mdt-subscriptions"]["base"]["stream"] + "\n" + "Xpath:   " + subscription["mdt-subscriptions"]["base"]["xpath"]  + "\n" + "State:   "  +  subscription["mdt-subscriptions"]["state"]  + "\n" +  "Comments:  "+ subscription["mdt-subscriptions"]["state"] + "\n" + "Receiver Address:   " + subscription["mdt-subscriptions"]["mdt-receivers"]["address"]  + "\n" + "Port:   " + subscription["mdt-subscriptions"]["mdt-receivers"]["port"]  + "\n" + "Connection State   :" + subscription["mdt-connections"]["state"]  + "\n" + "Time of Configuration   :"  +  T        
             return Power   
 
     def save_config(self):
 
         with manager.connect(host = self.host, port = router['port'], 
                                             username=router['username'], password= router['password'], 
-                                            hostkey_verify=False) as device:
+                                            hostkey_verify=False ,device_params={'name':'csr'}) as device:
 
-            save_rpc = open("save_config.xml").read()
-            wr = device.dispatch(save_rpc)  
-            print(wr)                                        
+            save_body =  """ 
+            <cisco-ia:save-config xmlns:cisco-ia="http://cisco.com/yang/cisco-ia"/>
+            """
+            save_rpc = device.dispatch(xml_.to_ele(save_body)) 
+            save_reply = xmltodict.parse(save_rpc.xml) 
+            reply = save_reply["rpc-reply"]["result"]["#text"]
+            return reply
 
     def send_message(self, message):
         token = 'YTRkNjEzZmUtMzE5MC00MDY4LTgzMzgtYzY0MTYwZmNkYmMwZDkzODk5MmYtY2Rj_PF84_consumer'
@@ -90,13 +93,13 @@ class  configure_mdt:
         Body = json.dumps(msg_body)
 
         msg_power = requests.request("POST",msg_url, data= Body, headers=headers).json()
-        print(msg_power)
+      
 
 if  __name__ == "__main__":
 
     with open("subscription_details.csv") as sub_details, open("host_details.csv") as host_details:
         sub_list = list(csv.reader(sub_details))
-        host_list = csv.reader(host_details)
+        host_list = list(csv.reader(host_details))
         for x in host_list:
             host =x[0]
             for row in sub_list:
@@ -108,7 +111,7 @@ if  __name__ == "__main__":
                 Config = configure_mdt(host,sub, xpath,r_ip, s_ip, period)
                 Config.configure_device()            
                 Config.send_message(Config.get_config())
-            Config.save_config()
+            Config.send_message(Config.save_config())
 
 
 
