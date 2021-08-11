@@ -75,7 +75,7 @@ class  configure_mdt:
             return reply
 
     def send_message(self, message):
-        token = ''
+        token = 'Yzg4Nzg0YTUtYzkzZi00YmEzLWFjNmUtNTcxOTdkOGFhMWRlZTI5NGMxOTgtMzdj_PF84_consumer'
 
         headers = {
          'Authorization' : 'Bearer {token}'.format(token=token),
@@ -116,3 +116,4 @@ if  __name__ == "__main__":
 
 
 
+s

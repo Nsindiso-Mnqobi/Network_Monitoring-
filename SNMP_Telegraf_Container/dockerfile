@@ -1,7 +1,7 @@
 FROM telegraf       
 MAINTAINER  Nsindiso Matshanga (nsinmatsh@gmail.com)
 RUN apt-get update 
-ENV INFLUX_TOKEN=baWJAFq10uOxy0eSyq8R220UboL7fCrNyJ4c4y0ezTJIITtZGaiMIDduSDB3y6xU9Dup2yrpDcDkowbaWcTY3w==
+ENV INFLUX_TOKEN=ydsDKNy45fNoM10GaoToZixwPEW3tf2X7PesGCBs9BTHhKgGfIetqhAZyJRfdVqARmTXzITmC54TirpL2zahyA==
 RUN rm /etc/telegraf/telegraf.conf
 WORKDIR /etc/telegraf/
 ADD telegraf.conf .
